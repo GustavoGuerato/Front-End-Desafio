@@ -1,0 +1,443 @@
+* {
+  font-family: Helvetica Neue Bold, Helvetica;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  margin-right: 10px;
+}
+
+.logo img {
+  display: block;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #004aad;
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#menu li {
+  margin: 0 15px;
+}
+
+#menu a {
+  color: #004aad;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#login-button {
+  color: #1a9047;
+  border: 1px solid #1a9047;
+  background-color: transparent;
+}
+
+#login-button a {
+  text-decoration: none;
+  color: #1a9047;
+}
+
+#register-button {
+  background-color: #1a9047;
+  color: white;
+}
+
+#register-button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#login-button:hover {
+  background-color: #1a9047;
+}
+
+#login-button:hover a {
+  color: white;
+}
+
+#register-button:hover {
+  background-color: white;
+  color: #1a9047;
+  border: 1px solid #1a9047;
+}
+
+#register-button:hover a {
+  color: #1a9047;
+}
+
+#homeDivision {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+}
+
+#homeDivision h1 {
+  margin-bottom: 45px;
+  font-size: 50px;
+  color: #2bc866;
+}
+
+#homeDivision img {
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 150px;
+}
+
+.input-container input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 600px;
+  height: 25px;
+}
+
+.input-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.input-container button img {
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.input-container button:hover {
+  background-color: #155a30;
+}
+
+#BenefitsXpert {
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#BenefitsXpert h1,
+#BenefitsXpert h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+#BenefitsXpert h1 {
+  color: #2bc866;
+  font-size: 38px;
+}
+
+#BenefitsXpert a {
+  text-decoration: none;
+}
+
+#BenefitsXpert h3 {
+  color: #000000;
+  font-weight: normal;
+}
+
+#BenefitsXpert p {
+  font-size: 30px;
+  color: #2bc866;
+}
+
+#BenefitsXpert span {
+  font-size: 16px;
+}
+
+#BenefitsXpert h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  word-wrap: break-word;
+  color: #2bc866;
+  margin: 0;
+}
+
+#BenefitsXpert button {
+  display: block;
+  margin-top: 20px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  background-color: #2bc866;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+#BenefitsXpert button:hover {
+  opacity: 0.9;
+  transition: 2s;
+  background-color: #155a30;
+}
+
+.feature {
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+.feature img {
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.feature p {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  color: #2bc866;
+}
+
+.feature-description {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner {
+  height: 1000px;
+  background-color: #fff;
+  position: relative;
+}
+
+.Partners {
+  background-color: #2bc866;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  height: 750px;
+}
+
+.RightContent {
+  margin-left: 300px;
+}
+
+.RightContent p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.Partners h1 {
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+.Partners img {
+  height: 350px;
+  width: 350px;
+}
+
+#companys {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  width: 700px;
+  justify-content: space-between;
+  border-radius: 50px;
+  height: 90px;
+  align-items: center;
+}
+
+#companys img {
+  height: 100px;
+  width: 100px;
+}
+
+.help {
+  padding-top: 50px;
+}
+
+.fake_carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel_item {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel_nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.rectangle {
+  background-color: white;
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border: 1px solid #2bc866;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.rectangle img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+}
+
+.rectangle h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #2bc866;
+}
+
+.rectangle span {
+  margin-top: 10px;
+  text-align: left;
+  margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+.rectangle p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.point-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.point-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.point-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.text-content h1 {
+  margin: 0;
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #2bc866;
+}

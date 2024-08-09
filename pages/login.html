@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <form id="register-form" class="register-form">
+          <input type="text" placeholder="name" />
+          <input type="password" placeholder="password" />
+          <input type="text" placeholder="email address" />
+          <button type="submit">create</button>
+          <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+        <form id="login-form" class="login-form">
+          <input type="text" placeholder="username" />
+          <input type="password" placeholder="password" />
+          <button type="submit"><a href="../pages/index.html">Login</a></button>
+          <p class="message">
+            Sem conta? <a href="../pages/cadastro.html">Crie Uma conta!</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      function validarCampos(form) {
+        const inputs = form.querySelectAll("input");
+        for (let input of inputs) {
+          if (input.value.trim() === "") {
+            alert("Por favor, preencha todos os campos.");
+            return false;
+          }
+        }
+        return true;
+      }
+
+      document
+        .getElementById("register-form")
+        .addEventListener("submit", function (event) {
+          if (!validateForm(this)) {
+            event.preventDefault();
+          }
+        });
+
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", function (event) {
+          if (!validateForm(this)) {
+            event.preventDefault();
+          }
+        });
+    </script>
+  </body>
+</html>

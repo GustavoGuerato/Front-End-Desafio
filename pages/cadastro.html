@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/login.css" />
+    <title>Tela de cadastro</title>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <form id="register-form" class="register-form">
+          <input type="text" placeholder="nome" />
+          <input type="text" placeholder="confirme o seu nome" />
+          <input type="password" placeholder="senha" />
+          <input type="text" placeholder="confirme sua senha" />
+          <input type="text" placeholder="endereço de email" />
+          <button type="submit">Criar</button>
+          <p class="message">Já tem uma conta? <a href="#">Faça o login</a></p>
+        </form>
+        <form id="login-form" class="login-form">
+          <input type="text" placeholder="nome" />
+          <input type="text" placeholder="confirme o seu nome" />
+          <input type="password" placeholder="senha" />
+          <input type="text" placeholder="confirme sua senha" />
+          <input type="text" placeholder="endereço de email" />
+          <input type="text" placeholder="confirme seu endereco de email" />
+          <button type="submit">
+            <a href="../pages/index.html">Criar Conta</a>
+          </button>
+          <p class="message">
+            <a href="../pages/login.html"> Possui login? Faça o login! </a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      function validarCampos(form) {
+        const inputs = form.querySelectAll("input");
+        for (let input of inputs) {
+          if (input.value.trim() === "") {
+            alert("Por favor, preencha todos os campos.");
+            return false;
+          }
+        }
+        return true;
+      }
+
+      document
+        .getElementById("register-form")
+        .addEventListener("submit", function (event) {
+          if (!validateForm(this)) {
+            event.preventDefault(); 
+          }
+        });
+
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", function (event) {
+          if (!validateForm(this)) {
+            event.preventDefault(); 
+          }
+        });
+    </script>
+  </body>
+</html>
